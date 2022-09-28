@@ -16,8 +16,10 @@
 }
 
 html, body {
+    margin: auto;
+    max-width: 780px;
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: #DBCA65;
     font-family: var(--fonte1);
 }
 
@@ -31,9 +33,12 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 8vw;
+    font-size: 10vw;
 }
 
+.titulo {
+    font-size: 1.2em;
+}
 header > p {
     padding-bottom: 50px;
 }
@@ -46,6 +51,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 section {
@@ -72,11 +81,12 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
+
 }
 
 section.imagem > p {
     display: inline-block;
-    padding: 8px;
+    padding: 40px;
     background-color: rgba(0, 0, 0, 0.39);
     text-shadow: 1px 1px 0px black;
 }
@@ -97,4 +107,17 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    font-size: .6em;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #DBCA65;
 }
